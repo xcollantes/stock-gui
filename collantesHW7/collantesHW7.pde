@@ -20,7 +20,7 @@ float minCloseArrLine = 0;
 
 int period = 30;
 int rowNum = 0;
-String symbol = "TSLA";
+final String symbol = "TSLA";
 color graphColor;
 
 float [] closeArrLine = new float[period];  //To be used only in the drawLine(); data multiplied by a magnitude
@@ -34,9 +34,9 @@ float intervalX = 0;
 */
 void setup()
 {
-  size(1000, 600);
+  size(1980, 1080);
   background(0);
-  font = createFont("Panton-LightCaps.otf", 12, true);
+  font = createFont("./../data/Panton-LightCaps.otf", 12, true);
   strokeWeight(3);
 
   getQuotes();
